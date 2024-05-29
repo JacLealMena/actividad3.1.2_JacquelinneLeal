@@ -2,8 +2,7 @@ import os
 import msvcrt
 os.system("cls")
 
-users = []
-contrasenas = []
+users = {"nombre": "", "contrasena": ""}
 
 while True:
     print("""
@@ -20,9 +19,10 @@ Menú
     elif opc == 2:
         nombre = input("Nombre de usuario: ")
         contra = input("Contraseña: ")
-        users.append(nombre)
-        contrasenas.append(contra)
+
     elif opc == 3:
-        pass
+        print("Eliminar usuario.\n")
+        eliminar = input("Ingrese nombre de usuario a eliminar: ")
     else:
-        pass
+        print("Usted ha salido con éxito...")
+        break
