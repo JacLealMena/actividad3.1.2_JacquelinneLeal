@@ -12,4 +12,11 @@ Menú
 4. Salir.
 """)
     opc = int(input("Opción: "))
-    
+    if opc == 1:
+        pass
+    elif opc == 2:
+        pass
+    elif opc == 3:
+        pass
+    else:
+        pass
