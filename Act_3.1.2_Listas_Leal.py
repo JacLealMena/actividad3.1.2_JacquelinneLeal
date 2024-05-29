@@ -2,6 +2,9 @@ import os
 import msvcrt
 os.system("cls")
 
+users = []
+contrasenas = []
+
 while True:
     print("""
 Menú
@@ -15,7 +18,10 @@ Menú
     if opc == 1:
         pass
     elif opc == 2:
-        pass
+        nombre = input("Nombre de usuario: ")
+        contra = input("Contraseña: ")
+        users.append(nombre)
+        contrasenas.append(contra)
     elif opc == 3:
         pass
     else:
